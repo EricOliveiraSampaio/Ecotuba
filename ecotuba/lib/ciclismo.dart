@@ -1,70 +1,120 @@
 import 'package:flutter/material.dart';
 import 'package:teste/main.dart';
 
-void cicilismo() {
-  runApp( Ciclismo());
+void ciclismo() {
+  runApp(Ciclismo());
 }
 
+class HeaderImageCiclismo extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Stack(
+      children: [
+        Container(
+          height: 250,
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage('imagens/Cicli.png'), // Imagem do ciclista
+              fit: BoxFit.cover,
+            ),
+          ),
+        ),
+        Positioned(
+          bottom: 20,
+          left: 20,
+          child: Image.asset(
+            'imagens/leCicli.png', // Imagem do texto "CICLISMO"
+            height: 60,
+          ),
+        ),
+        Positioned(
+          top: 40,
+          left: 10,
+          child: IconButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => EcotubaApp()),
+              );
+            },
+            icon: const Icon(Icons.arrow_back),
+          ),
+        ),
+      ],
+    );
+  }
+}
 
 class Ciclismo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            Stack(
-              children: [
-                Image.network(
-                  'imagens/Cicli.png', 
-                  height: 300,
-                  width: double.infinity,
-                  fit: BoxFit.cover,
-                ),
-                Positioned(
-                  top: 30,
-                  left: 10,
-                  child: IconButton(onPressed: () {Navigator.push(
-                    context, MaterialPageRoute(builder: (context) => EcotubaApp()));}, icon: const Icon(Icons.arrow_back)),
-                ),
-                Positioned(
-                  top: 200,
-                  left: 0,
-                  right: 0,
-                  child: Image.asset(
-                    'imagens/leCicli.png',
-                    
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: CiclismoScreen(),
+    );
+  }
+}
 
+// Tela principal
+class CiclismoScreen extends StatelessWidget {
+  final List<String> images = [
+    'imagens/Cpicinguaba.png', // Caminhos das imagens dos locais
+    'imagens/Cbonete.png',
+    'imagens/Cbananas.png',
+    'imagens/Citagua.png',
+    'imagens/Cfazenda.png',
+
+  ];
+
+  final List<String> destinos = [
+    'imagens/Lpicinguaba.png', // Caminhos das imagens dos textos
+    'imagens/Lbonete.png',
+    'imagens/Lbananas.png',
+    'imagens/Litagua.png',
+    'imagens/Lfazenda.png',
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Column(
+        children: [
+          HeaderImageCiclismo(), // Cabeçalho de ciclismo
+          Expanded(
+            child: ListView.builder(
+              itemCount: destinos.length,
+              itemBuilder: (context, index) {
+                return Card(
+                  margin: EdgeInsets.symmetric(vertical: 10, horizontal: 15),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(15),
                   ),
-                ),
-              ],
+                  child: Stack(
+                    children: [
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(15),
+                        child: Image.asset(
+                          images[index], // Imagem do local
+                          height: 150,
+                          width: double.infinity,
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      Positioned(
+                        bottom: 10,
+                        left: 10,
+                        child: Image.asset(
+                          destinos[index], // Imagem do texto do local
+                          height: 40, // Ajuste
+                        ),
+                      ),
+                    ],
+                  ),
+                );
+              },
             ),
-            Padding(
-              padding: const EdgeInsets.all(16.0),
-              child: Column(
-                children: [
-                  Image.network(
-                    'imagens/Atlan.png', 
-                    height: 200,
-                    width: double.infinity,
-                    fit: BoxFit.cover,
-                  ),
-                  SizedBox(height: 16),
-                  Image.asset(
-                    'imagens/leAtlan.png',
-                    
-                  ),
-                  SizedBox(height: 16),
-                  const Text(
-                    'Bem-vindo às trilhas na Mata Atlântica de Ubatuba, um paraíso para os amantes do ciclismo que buscam uma aventura emocionante em meio à natureza exuberante. Prepare-se para uma jornada única sobre duas rodas, onde cada pedalada será uma descoberta de novas paisagens e experiências inesquecíveis.Imagine-se pedalando por trilhas sinuosas, cercado pela riqueza e diversidade da Mata Atlântica. À medida que você avança, será envolvido pelo perfume fresco das flores tropicais, pelo som suave dos pássaros cantando e pela sensação revigorante do ar puro da floresta.Cada curva da trilha revela uma nova surpresa: riachos cristalinos borbulham ao lado do caminho, cachoeiras escondidas surgem entre a folhagem verdejante e avistosas aves tropicais voam acima de você. É uma experiência imersiva que desperta todos os seus sentidos e te conecta profundamente com a natureza ao seu redor.Mas as trilhas na Mata Atlântica não são apenas sobre a beleza cênica - elas também oferecem um desafio emocionante para os ciclistas que buscam testar suas habilidades e resistência. Subidas íngremes, descidas técnicas e terrenos variados proporcionam uma experiência de ciclismo dinâmica e estimulante que manterá seu coração acelerado e sua mente focada.',
-                    style: TextStyle(fontSize: 16, color: Colors.black),
-                    textAlign: TextAlign.justify,
-                  ),
-                ],
-              ),
-            ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }

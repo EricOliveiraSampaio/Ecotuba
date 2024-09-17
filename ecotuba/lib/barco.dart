@@ -1,70 +1,92 @@
 import 'package:flutter/material.dart';
-import 'package:teste/main.dart';
-
-void barco() {
-  runApp( Barco());
-}
-
 
 class Barco extends StatelessWidget {
+  final List<String> destinos = [
+    'imagens/Icouves3.png',  // Imagem da Ilha das Couves
+    'imagens/Iprumirim3.png', // Imagem da Ilha do Prumirim
+    'imagens/Iporto.png',  // Imagem do Cais do Porto
+    'imagens/Iporcos.png',  // Imagem da Ilha dos Porcos
+    'imagens/Pfelix3.png',  // Imagem da Praia do Félix
+    'imagens/Plazaro3.png',  // Imagem da Praia do Lázaro
+  ];
+
+  final List<String> textsImages = [
+    'imagens/Lcouves3.png',  // Texto sobreposto para Ilha das Couves
+    'imagens/Lprumirim3.png', // Texto sobreposto para Ilha do Prumirim
+    'imagens/Lporto.png',  // Texto sobreposto para Cais do Porto
+    'imagens/Lporcos.png',  // Texto sobreposto para Ilha dos Porcos
+    'imagens/Lfelix3.png',  // Texto sobreposto para Praia do Félix
+    'imagens/Llazaro3.png',  // Texto sobreposto para Praia do Lázaro
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            Stack(
-              children: [
-                Image.network(
-                  'imagens/Bar.png', 
-                  height: 300,
-                  width: double.infinity,
-                  fit: BoxFit.cover,
-                ),
-                Positioned(
-                  top: 30,
-                  left: 10,
-                  child: IconButton(onPressed: () {Navigator.push(
-                    context, MaterialPageRoute(builder: (context) => EcotubaApp()));}, icon: const Icon(Icons.arrow_back)),
-                ),
-                Positioned(
-                  top: 200,
-                  left: 0,
-                  right: 0,
-                  child: Image.asset(
-                    'imagens/leBar.png',
-                    
-
-                  ),
-                ),
-              ],
-            ),
-            Padding(
-              padding: const EdgeInsets.all(16.0),
-              child: Column(
-                children: [
-                  Image.network(
-                    'imagens/CostaDeslu.png', 
-                    height: 200,
-                    width: double.infinity,
+      body: Column(
+        children: [
+          Stack(
+            children: [
+              Container(
+                height: 250,
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                    image: AssetImage('imagens/Bar.png'), // Cabeçalho da tela
                     fit: BoxFit.cover,
                   ),
-                  SizedBox(height: 16),
-                  Image.asset(
-                    'imagens/leCostaDeslu.png',
-                    
-                  ),
-                  SizedBox(height: 16),
-                  const Text(
-                    'Bem-vindo à deslumbrante costa de Ubatuba, onde o mar encontra a terra em uma sinfonia de beleza natural e aventura marítima. Embarque em um passeio de barco e mergulhe em um mundo de paisagens espetaculares, águas cristalinas e descobertas emocionantes.À medida que você navega ao longo da costa de Ubatuba, será recebido por uma vista panorâmica de praias paradisíacas, enseadas isoladas e formações rochosas majestosas. Cada curva do litoral revela uma nova maravilha, convidando você a explorar e se maravilhar com a diversidade e a beleza desta região única.Imagine-se navegando pelas águas calmas e transparentes, com o sol brilhando acima e uma brisa suave acariciando seu rosto. Você terá a oportunidade de visitar algumas das ilhas encantadoras que pontilham o litoral de Ubatuba, como a Ilha Anchieta, onde você pode caminhar por trilhas exuberantes, relaxar em praias desertas e mergulhar em águas repletas de vida marinha.Além das ilhas, você também terá a chance de explorar cavernas marinhas e formações rochosas impressionantes ao longo da costa. Navegue através de grutas misteriosas, descubra cavernas escondidas e maravilhe-se com as maravilhas geológicas que se erguem das profundezas do oceano.',
-                    style: TextStyle(fontSize: 16, color: Colors.black),
-                    textAlign: TextAlign.justify,
-                  ),
-                ],
+                ),
               ),
+              Positioned(
+                top: 40,
+                left: 10,
+                child: IconButton(
+                  onPressed: () {
+                    Navigator.pop(context); // Botão para voltar
+                  },
+                  icon: const Icon(Icons.arrow_back),
+                ),
+              ),
+              Positioned(
+                bottom: 20,
+                left: 20,
+                child: Image.asset(
+                  'imagens/leBar.png', // Texto "BARCO"
+                  height: 60,
+                ),
+              ),
+            ],
+          ),
+          Expanded(
+            child: ListView.builder(
+              itemCount: destinos.length,
+              itemBuilder: (context, index) {
+                return Card(
+                  margin: EdgeInsets.symmetric(vertical: 10, horizontal: 15),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(15),
+                  ),
+                  child: Stack(
+                    alignment: Alignment.center, // Alinha os textos ao centro
+                    children: [
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(15),
+                        child: Image.asset(
+                          destinos[index], // Imagem do destino (ilha ou praia)
+                          height: 150,
+                          width: double.infinity,
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      Image.asset(
+                        textsImages[index], // Imagem do texto sobreposto
+                        height: 40, // Ajuste de altura do texto
+                      ),
+                    ],
+                  ),
+                );
+              },
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
