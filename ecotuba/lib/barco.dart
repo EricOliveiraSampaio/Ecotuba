@@ -2,21 +2,21 @@ import 'package:flutter/material.dart';
 
 class Barco extends StatelessWidget {
   final List<String> destinos = [
-    'imagens/Icouves3.png',  // Imagem da Ilha das Couves
-    'imagens/Iprumirim3.png', // Imagem da Ilha do Prumirim
-    'imagens/Iporto.png',  // Imagem do Cais do Porto
-    'imagens/Iporcos.png',  // Imagem da Ilha dos Porcos
-    'imagens/Pfelix3.png',  // Imagem da Praia do Félix
-    'imagens/Plazaro3.png',  // Imagem da Praia do Lázaro
+    '~/imagens/Icouves3.png',  // Imagem da Ilha das Couves
+    '~/imagens/Iprumirim3.png', // Imagem da Ilha do Prumirim
+    '~/imagens/Iporto.png',  // Imagem do Cais do Porto
+    '~/imagens/Iporcos.png',  // Imagem da Ilha dos Porcos
+    '~/imagens/Pfelix3.png',  // Imagem da Praia do Félix
+    '~/imagens/Plazaro3.png',  // Imagem da Praia do Lázaro
   ];
 
   final List<String> textsImages = [
-    'imagens/Lcouves3.png',  // Texto sobreposto para Ilha das Couves
-    'imagens/Lprumirim3.png', // Texto sobreposto para Ilha do Prumirim
-    'imagens/Lporto.png',  // Texto sobreposto para Cais do Porto
-    'imagens/Lporcos.png',  // Texto sobreposto para Ilha dos Porcos
-    'imagens/Lfelix3.png',  // Texto sobreposto para Praia do Félix
-    'imagens/Llazaro3.png',  // Texto sobreposto para Praia do Lázaro
+    '~/imagens/Lcouves3.png',  // Texto sobreposto para Ilha das Couves
+    '~/imagens/Lprumirim3.png', // Texto sobreposto para Ilha do Prumirim
+    '~/imagens/Lporto.png',  // Texto sobreposto para Cais do Porto
+    '~/imagens/Lporcos.png',  // Texto sobreposto para Ilha dos Porcos
+    '~/imagens/Lfelix3.png',  // Texto sobreposto para Praia do Félix
+    '~/imagens/Llazaro3.png',  // Texto sobreposto para Praia do Lázaro
   ];
 
   @override
@@ -30,7 +30,7 @@ class Barco extends StatelessWidget {
                 height: 250,
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                    image: AssetImage('imagens/Bar.png'), // Cabeçalho da tela
+                    image: AssetImage('~/imagens/Bar.png'), // Cabeçalho da tela
                     fit: BoxFit.cover,
                   ),
                 ),
@@ -49,7 +49,7 @@ class Barco extends StatelessWidget {
                 bottom: 20,
                 left: 20,
                 child: Image.asset(
-                  'imagens/leBar.png', // Texto "BARCO"
+                  '~/imagens/leBar.png', // Texto "BARCO"
                   height: 60,
                 ),
               ),

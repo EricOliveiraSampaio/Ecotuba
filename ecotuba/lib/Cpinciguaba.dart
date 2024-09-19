@@ -1,14 +1,25 @@
 import 'package:flutter/material.dart';
+import 'package:teste/Ciclismoclass.dart';
 import 'package:teste/main.dart';
+import 'package:teste/mergulhador.dart';
 
-void cicilismo() {
-  runApp( Ciclismo());
+
+void Cpincinguaba() {
+  runApp( const EcotubaApp());
 }
 
-
-class Ciclismo extends StatelessWidget {
+class cpincinguaba extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    List<Ciclismoclass> ciclismo = [
+    Ciclismoclass(textoInicial: 'Picinguaba, em Ubatuba, é uma das praias mais charmosas e preservadas do litoral paulista. Situada em uma pequena enseada, a praia é conhecida por sua beleza natural exuberante e tranquilidade. Com uma faixa de areia fina e dourada, e águas claras e calmas, Picinguaba é ideal para relaxar e desfrutar de um ambiente sereno. O cenário ao redor da praia é marcado pela rica vegetação da Mata Atlântica, que oferece um contraste deslumbrante com o mar azul. A área é perfeita para quem deseja se conectar com a natureza, com trilhas e mirantes que proporcionam vistas panorâmicas e oportunidades para observar a fauna e flora locais. Com um ambiente tranquilo e quase intocado, Picinguaba é um refúgio para aqueles que buscam escapar da agitação e se imergir na beleza natural de Ubatuba. É o destino perfeito para momentos de paz e contemplação, em um cenário que destaca a verdadeira essência do litoral paulista.', imageInicial: 'imagens/Cicli.png', imageSecundaria: 'imagens/leCicli.png', imageTerciaria: 'imagens/Cpicinguaba.png', imageQuartenaria: 'imagens/lePicinguaba.png' ),
+    Ciclismoclass(textoInicial: 'Picinguaba, em Ubatuba, é uma das praias mais charmosas e preservadas do litoral paulista. Situada em uma pequena enseada, a praia é conhecida por sua beleza natural exuberante e tranquilidade. Com uma faixa de areia fina e dourada, e águas claras e calmas, Picinguaba é ideal para relaxar e desfrutar de um ambiente sereno. O cenário ao redor da praia é marcado pela rica vegetação da Mata Atlântica, que oferece um contraste deslumbrante com o mar azul. A área é perfeita para quem deseja se conectar com a natureza, com trilhas e mirantes que proporcionam vistas panorâmicas e oportunidades para observar a fauna e flora locais. Com um ambiente tranquilo e quase intocado, Picinguaba é um refúgio para aqueles que buscam escapar da agitação e se imergir na beleza natural de Ubatuba. É o destino perfeito para momentos de paz e contemplação, em um cenário que destaca a verdadeira essência do litoral paulista.', imageInicial: 'imagens/Cicli.png', imageSecundaria: 'imagens/leCicli.png', imageTerciaria: 'imagens/Cpicinguaba.png', imageQuartenaria: 'imagens/lePicinguaba.png' ),
+    Ciclismoclass(textoInicial: 'Picinguaba, em Ubatuba, é uma das praias mais charmosas e preservadas do litoral paulista. Situada em uma pequena enseada, a praia é conhecida por sua beleza natural exuberante e tranquilidade. Com uma faixa de areia fina e dourada, e águas claras e calmas, Picinguaba é ideal para relaxar e desfrutar de um ambiente sereno. O cenário ao redor da praia é marcado pela rica vegetação da Mata Atlântica, que oferece um contraste deslumbrante com o mar azul. A área é perfeita para quem deseja se conectar com a natureza, com trilhas e mirantes que proporcionam vistas panorâmicas e oportunidades para observar a fauna e flora locais. Com um ambiente tranquilo e quase intocado, Picinguaba é um refúgio para aqueles que buscam escapar da agitação e se imergir na beleza natural de Ubatuba. É o destino perfeito para momentos de paz e contemplação, em um cenário que destaca a verdadeira essência do litoral paulista.', imageInicial: 'imagens/Cicli.png', imageSecundaria: 'imagens/leCicli.png', imageTerciaria: 'imagens/Cpicinguaba.png', imageQuartenaria: 'imagens/lePicinguaba.png' ),
+    Ciclismoclass(textoInicial: 'Picinguaba, em Ubatuba, é uma das praias mais charmosas e preservadas do litoral paulista. Situada em uma pequena enseada, a praia é conhecida por sua beleza natural exuberante e tranquilidade. Com uma faixa de areia fina e dourada, e águas claras e calmas, Picinguaba é ideal para relaxar e desfrutar de um ambiente sereno. O cenário ao redor da praia é marcado pela rica vegetação da Mata Atlântica, que oferece um contraste deslumbrante com o mar azul. A área é perfeita para quem deseja se conectar com a natureza, com trilhas e mirantes que proporcionam vistas panorâmicas e oportunidades para observar a fauna e flora locais. Com um ambiente tranquilo e quase intocado, Picinguaba é um refúgio para aqueles que buscam escapar da agitação e se imergir na beleza natural de Ubatuba. É o destino perfeito para momentos de paz e contemplação, em um cenário que destaca a verdadeira essência do litoral paulista.', imageInicial: 'imagens/Cicli.png', imageSecundaria: 'imagens/leCicli.png', imageTerciaria: 'imagens/Cpicinguaba.png', imageQuartenaria: 'imagens/lePicinguaba.png' ),
+    Ciclismoclass(textoInicial: 'Picinguaba, em Ubatuba, é uma das praias mais charmosas e preservadas do litoral paulista. Situada em uma pequena enseada, a praia é conhecida por sua beleza natural exuberante e tranquilidade. Com uma faixa de areia fina e dourada, e águas claras e calmas, Picinguaba é ideal para relaxar e desfrutar de um ambiente sereno. O cenário ao redor da praia é marcado pela rica vegetação da Mata Atlântica, que oferece um contraste deslumbrante com o mar azul. A área é perfeita para quem deseja se conectar com a natureza, com trilhas e mirantes que proporcionam vistas panorâmicas e oportunidades para observar a fauna e flora locais. Com um ambiente tranquilo e quase intocado, Picinguaba é um refúgio para aqueles que buscam escapar da agitação e se imergir na beleza natural de Ubatuba. É o destino perfeito para momentos de paz e contemplação, em um cenário que destaca a verdadeira essência do litoral paulista.', imageInicial: 'imagens/Cicli.png', imageSecundaria: 'imagens/leCicli.png', imageTerciaria: 'imagens/Cpicinguaba.png', imageQuartenaria: 'imagens/lePicinguaba.png' )
+  
+  ];
+
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(
@@ -16,7 +27,7 @@ class Ciclismo extends StatelessWidget {
             Stack(
               children: [
                 Image.network(
-                  'imagens/Cicli.png', 
+                  ciclismo[1].image, 
                   height: 300,
                   width: double.infinity,
                   fit: BoxFit.cover,
@@ -25,14 +36,14 @@ class Ciclismo extends StatelessWidget {
                   top: 30,
                   left: 10,
                   child: IconButton(onPressed: () {Navigator.push(
-                    context, MaterialPageRoute(builder: (context) => EcotubaApp()));}, icon: const Icon(Icons.arrow_back)),
+                    context, MaterialPageRoute(builder: (context) => Mergulhador()));}, icon: const Icon(Icons.arrow_back)),
                 ),
                 Positioned(
                   top: 200,
                   left: 0,
                   right: 0,
                   child: Image.asset(
-                    'imagens/leCicli.png',
+                    ciclismo[2].image2,
                     
 
                   ),
@@ -44,19 +55,19 @@ class Ciclismo extends StatelessWidget {
               child: Column(
                 children: [
                   Image.network(
-                    'imagens/Atlan.png', 
+                    ciclismo[3].image3, 
                     height: 200,
                     width: double.infinity,
                     fit: BoxFit.cover,
                   ),
                   SizedBox(height: 16),
                   Image.asset(
-                    'imagens/leAtlan.png',
+                    ciclismo[4].image4,
                     
                   ),
                   SizedBox(height: 16),
-                  const Text(
-                    'Bem-vindo às trilhas na Mata Atlântica de Ubatuba, um paraíso para os amantes do ciclismo que buscam uma aventura emocionante em meio à natureza exuberante. Prepare-se para uma jornada única sobre duas rodas, onde cada pedalada será uma descoberta de novas paisagens e experiências inesquecíveis.Imagine-se pedalando por trilhas sinuosas, cercado pela riqueza e diversidade da Mata Atlântica. À medida que você avança, será envolvido pelo perfume fresco das flores tropicais, pelo som suave dos pássaros cantando e pela sensação revigorante do ar puro da floresta.Cada curva da trilha revela uma nova surpresa: riachos cristalinos borbulham ao lado do caminho, cachoeiras escondidas surgem entre a folhagem verdejante e avistosas aves tropicais voam acima de você. É uma experiência imersiva que desperta todos os seus sentidos e te conecta profundamente com a natureza ao seu redor.Mas as trilhas na Mata Atlântica não são apenas sobre a beleza cênica - elas também oferecem um desafio emocionante para os ciclistas que buscam testar suas habilidades e resistência. Subidas íngremes, descidas técnicas e terrenos variados proporcionam uma experiência de ciclismo dinâmica e estimulante que manterá seu coração acelerado e sua mente focada.',
+                   Text(
+                    ciclismo[0].texto,
                     style: TextStyle(fontSize: 16, color: Colors.black),
                     textAlign: TextAlign.justify,
                   ),

@@ -1,4 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:teste/Mianchieta.dart';
+import 'package:teste/Micouves.dart';
+import 'package:teste/Miprumirim.dart';
+import 'package:teste/Mivitoria.dart';
+import 'package:teste/Mpcedro.dart';
+import 'package:teste/Mpgrossa.dart';
 import 'package:teste/main.dart';
 
 void mergulhador() {
@@ -69,9 +75,9 @@ class MergulhoScreen extends StatelessWidget {
   final List<String> images = [
     'imagens/Icouves.png', // Caminhos das imagens das ilhas
     'imagens/Ianchieta.png',
-    'imagens/Icedro.png',
+    'imagens/Pcedro.png',
     'imagens/Iprumirim.png',
-    'imagens/Igrossa.png',
+    'imagens/Pgrossa.png',
     'imagens/Ivitoria.png',
   ];
 
@@ -85,28 +91,71 @@ class MergulhoScreen extends StatelessWidget {
             child: ListView.builder(
               itemCount: destinos.length,
               itemBuilder: (context, index) {
-                return Card(
-                  margin: EdgeInsets.symmetric(vertical: 10, horizontal: 15),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(15),
-                  ),
-                  child: Stack(
-                    alignment: Alignment.center, // Centraliza o texto
-                    children: [
-                      ClipRRect(
-                        borderRadius: BorderRadius.circular(15),
-                        child: Image.asset(
-                          images[index], // Imagem da ilha
-                          height: 150,
-                          width: double.infinity,
-                          fit: BoxFit.cover,
+                return GestureDetector(
+                  onTap: () {
+                    // Navegação para diferentes telas com base no índice
+                    switch (index) {
+                      case 0:
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => HeaderMicouves()),
+                        );
+                        break;
+                      case 1:
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => HeaderMianchieta()),
+                        );
+                        break;
+                      case 2:
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => HeaderMpcedro()),
+                        );
+                        break;
+                      case 3:
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => HeaderMiprumirim()),
+                        );
+                        break;
+                      case 4:
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => HeaderMpgrossa()),
+                        );
+                        break;
+                      case 5:
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => HeaderMivitoria()),
+                        );
+                        break;
+                    }
+                  },
+                  child: Card(
+                    margin: EdgeInsets.symmetric(vertical: 10, horizontal: 15),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(15),
+                    ),
+                    child: Stack(
+                      alignment: Alignment.center, // Centraliza o texto
+                      children: [
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(15),
+                          child: Image.asset(
+                            images[index], // Imagem da ilha
+                            height: 150,
+                            width: double.infinity,
+                            fit: BoxFit.cover,
+                          ),
                         ),
-                      ),
-                      Image.asset(
-                        destinos[index], // Imagem do texto da ilha
-                        height: 40, // Ajuste o tamanho conforme necessário
-                      ),
-                    ],
+                        Image.asset(
+                          destinos[index], // Imagem do texto da ilha
+                          height: 40, // Ajuste o tamanho conforme necessário
+                        ),
+                      ],
+                    ),
                   ),
                 );
               },
@@ -117,3 +166,5 @@ class MergulhoScreen extends StatelessWidget {
     );
   }
 }
+
+// Defina as telas para os diferentes destinos

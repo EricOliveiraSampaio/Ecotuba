@@ -1,14 +1,24 @@
 import 'package:flutter/material.dart';
+import 'package:teste/CachoeiraClass.dart';
 import 'package:teste/main.dart';
 
-void cachoeirismo() {
-  runApp( Cachoeirismo());
+
+void CAprumirim() {
+  runApp( const EcotubaApp());
 }
 
-
-class Cachoeirismo extends StatelessWidget {
+class caprumirim extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    List<Cachoeiraclass> cachoeirismo = [
+    Cachoeiraclass(textoInicial: 'A Cachoeira do Prumirim, em Ubatuba, é uma das mais belas e visitadas da região, encantando com suas águas cristalinas que formam piscinas naturais perfeitas para banho. Com várias quedas d água que descem por entre rochas, a cachoeira oferece um cenário deslumbrante e um refresco revigorante para os visitantes. Rodeada pela densa vegetação da Mata Atlântica, o ambiente é repleto de vida e tranquilidade, ideal para quem busca contato direto com a natureza. As trilhas que levam até a cachoeira proporcionam uma experiência única de ecoturismo, com a possibilidade de observar a flora e fauna locais ao longo do caminho. A Cachoeira do Prumirim é um destino imperdível em Ubatuba, seja para um dia de lazer com a família ou para aventureiros que desejam explorar a beleza natural da região. Com sua combinação de quedas d água, piscinas naturais e o entorno verdejante, é o lugar perfeito para relaxar e aproveitar a serenidade do litoral.', imageInicial: 'imagens/Cacho.png', imageSecundaria: 'imagens/leCacho.png', imageTerciaria: 'imagens/CAprumirim.png', imageQuartenaria: 'imagens/lePrumirim3.png' ),
+    Cachoeiraclass(textoInicial: 'A Cachoeira do Prumirim, em Ubatuba, é uma das mais belas e visitadas da região, encantando com suas águas cristalinas que formam piscinas naturais perfeitas para banho. Com várias quedas d água que descem por entre rochas, a cachoeira oferece um cenário deslumbrante e um refresco revigorante para os visitantes. Rodeada pela densa vegetação da Mata Atlântica, o ambiente é repleto de vida e tranquilidade, ideal para quem busca contato direto com a natureza. As trilhas que levam até a cachoeira proporcionam uma experiência única de ecoturismo, com a possibilidade de observar a flora e fauna locais ao longo do caminho. A Cachoeira do Prumirim é um destino imperdível em Ubatuba, seja para um dia de lazer com a família ou para aventureiros que desejam explorar a beleza natural da região. Com sua combinação de quedas d água, piscinas naturais e o entorno verdejante, é o lugar perfeito para relaxar e aproveitar a serenidade do litoral.', imageInicial: 'imagens/Cacho.png', imageSecundaria: 'imagens/leCacho.png', imageTerciaria: 'imagens/CAprumirim.png', imageQuartenaria: 'imagens/lePrumirim3.png' ),
+    Cachoeiraclass(textoInicial: 'A Cachoeira do Prumirim, em Ubatuba, é uma das mais belas e visitadas da região, encantando com suas águas cristalinas que formam piscinas naturais perfeitas para banho. Com várias quedas d água que descem por entre rochas, a cachoeira oferece um cenário deslumbrante e um refresco revigorante para os visitantes. Rodeada pela densa vegetação da Mata Atlântica, o ambiente é repleto de vida e tranquilidade, ideal para quem busca contato direto com a natureza. As trilhas que levam até a cachoeira proporcionam uma experiência única de ecoturismo, com a possibilidade de observar a flora e fauna locais ao longo do caminho. A Cachoeira do Prumirim é um destino imperdível em Ubatuba, seja para um dia de lazer com a família ou para aventureiros que desejam explorar a beleza natural da região. Com sua combinação de quedas d água, piscinas naturais e o entorno verdejante, é o lugar perfeito para relaxar e aproveitar a serenidade do litoral.', imageInicial: 'imagens/Cacho.png', imageSecundaria: 'imagens/leCacho.png', imageTerciaria: 'imagens/CAprumirim.png', imageQuartenaria: 'imagens/lePrumirim3.png' ),
+    Cachoeiraclass(textoInicial: 'A Cachoeira do Prumirim, em Ubatuba, é uma das mais belas e visitadas da região, encantando com suas águas cristalinas que formam piscinas naturais perfeitas para banho. Com várias quedas d água que descem por entre rochas, a cachoeira oferece um cenário deslumbrante e um refresco revigorante para os visitantes. Rodeada pela densa vegetação da Mata Atlântica, o ambiente é repleto de vida e tranquilidade, ideal para quem busca contato direto com a natureza. As trilhas que levam até a cachoeira proporcionam uma experiência única de ecoturismo, com a possibilidade de observar a flora e fauna locais ao longo do caminho. A Cachoeira do Prumirim é um destino imperdível em Ubatuba, seja para um dia de lazer com a família ou para aventureiros que desejam explorar a beleza natural da região. Com sua combinação de quedas d água, piscinas naturais e o entorno verdejante, é o lugar perfeito para relaxar e aproveitar a serenidade do litoral.', imageInicial: 'imagens/Cacho.png', imageSecundaria: 'imagens/leCacho.png', imageTerciaria: 'imagens/CAprumirim.png', imageQuartenaria: 'imagens/lePrumirim3.png' ),
+    Cachoeiraclass(textoInicial: 'A Cachoeira do Prumirim, em Ubatuba, é uma das mais belas e visitadas da região, encantando com suas águas cristalinas que formam piscinas naturais perfeitas para banho. Com várias quedas d água que descem por entre rochas, a cachoeira oferece um cenário deslumbrante e um refresco revigorante para os visitantes. Rodeada pela densa vegetação da Mata Atlântica, o ambiente é repleto de vida e tranquilidade, ideal para quem busca contato direto com a natureza. As trilhas que levam até a cachoeira proporcionam uma experiência única de ecoturismo, com a possibilidade de observar a flora e fauna locais ao longo do caminho. A Cachoeira do Prumirim é um destino imperdível em Ubatuba, seja para um dia de lazer com a família ou para aventureiros que desejam explorar a beleza natural da região. Com sua combinação de quedas d água, piscinas naturais e o entorno verdejante, é o lugar perfeito para relaxar e aproveitar a serenidade do litoral.', imageInicial: 'imagens/Cacho.png', imageSecundaria: 'imagens/leCacho.png', imageTerciaria: 'imagens/CAprumirim.png', imageQuartenaria: 'imagens/lePrumirim3.png' )
+  
+  ];
+
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(
@@ -16,7 +26,7 @@ class Cachoeirismo extends StatelessWidget {
             Stack(
               children: [
                 Image.network(
-                  'imagens/Cacho.png', 
+                  cachoeirismo[1].image, 
                   height: 300,
                   width: double.infinity,
                   fit: BoxFit.cover,
@@ -32,7 +42,7 @@ class Cachoeirismo extends StatelessWidget {
                   left: 0,
                   right: 0,
                   child: Image.asset(
-                    'imagens/leCacho.png',
+                    cachoeirismo[2].image2,
                     
 
                   ),
@@ -44,19 +54,19 @@ class Cachoeirismo extends StatelessWidget {
               child: Column(
                 children: [
                   Image.network(
-                    'imagens/CachoRe.png', 
+                    cachoeirismo[3].image3, 
                     height: 200,
                     width: double.infinity,
                     fit: BoxFit.cover,
                   ),
                   SizedBox(height: 16),
                   Image.asset(
-                    'imagens/leCachoRe.png',
+                    cachoeirismo[4].image4,
                     
                   ),
                   SizedBox(height: 16),
-                  const Text(
-                    'Bem-vindo à deslumbrante Cachoeira da Renata, um verdadeiro tesouro escondido em meio à exuberante Mata Atlântica de Ubatuba. Prepare-se para uma experiência única de cachoeirismo que vai encantar seus sentidos e renovar sua alma.Ao chegar à Cachoeira da Renata, você será recebido por uma trilha serpenteante que atravessa uma mata exuberante, repleta de vida e cores. O caminho é uma aventura em si mesma, com a promessa de maravilhas naturais esperando por você no final da jornada.À medida que você avança pela trilha, o som suave da água corrente começa a ficar mais alto, anunciando a proximidade da cachoeira. E então, subitamente, você emerge da mata para ser presenteado com a visão deslumbrante da Cachoeira da Renata. Uma queda d água majestosa se precipita de uma altura impressionante, formando uma piscina natural convidativa na base.A água cristalina da cachoeira brilha ao sol, convidando-o a mergulhar e se refrescar em suas águas revigorantes. A energia vibrante e pura deste lugar sagrado é palpável, enchendo-o de uma sensação de paz e harmonia com a natureza ao seu redor.',
+                   Text(
+                    cachoeirismo[0].texto,
                     style: TextStyle(fontSize: 16, color: Colors.black),
                     textAlign: TextAlign.justify,
                   ),

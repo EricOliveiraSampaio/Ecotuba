@@ -16,7 +16,7 @@ class Barco extends StatelessWidget {
             Stack(
               children: [
                 Image.network(
-                  'imagens/Bar.png', 
+                  '~/imagens/Bar.png', 
                   height: 300,
                   width: double.infinity,
                   fit: BoxFit.cover,
@@ -32,7 +32,7 @@ class Barco extends StatelessWidget {
                   left: 0,
                   right: 0,
                   child: Image.asset(
-                    'imagens/leBar.png',
+                    '~/imagens/leBar.png',
                     
 
                   ),
@@ -44,14 +44,14 @@ class Barco extends StatelessWidget {
               child: Column(
                 children: [
                   Image.network(
-                    'imagens/CostaDeslu.png', 
+                    '~/imagens/CostaDeslu.png', 
                     height: 200,
                     width: double.infinity,
                     fit: BoxFit.cover,
                   ),
                   SizedBox(height: 16),
                   Image.asset(
-                    'imagens/leCostaDeslu.png',
+                    '~/imagens/leCostaDeslu.png',
                     
                   ),
                   SizedBox(height: 16),
