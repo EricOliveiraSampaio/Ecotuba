@@ -1,55 +1,89 @@
 import 'package:flutter/material.dart';
 import 'package:teste/Ecorcovado.dart';
-import 'package:teste/Emar.dart';
-import 'package:teste/Eprumirim.dart';
+import 'package:teste/main.dart';
+
 
 class SegundaPag extends StatelessWidget {
   final List<String> destinos = [
-    'imagens/Ecorcovado.png',        // Imagem do destino (escalada)
-    'imagens/Eprumirim.png',
-    'imagens/Emar.png',
+    'imagens/Ecorcovado.png', 
+    'imagens/Eprumirim.png',  
+    'imagens/Emar.png',      
   ];
 
   final List<String> textsImages = [
-    'imagens/Lcorcovado.png',  // Imagem do texto sobreposto
-    'imagens/Lprumirim2.png',
-    'imagens/Lmar.png',
+    'imagens/Lcorcovado.png',  
+    'imagens/Lprumirim2.png',  
+    'imagens/Lmar.png',       
   ];
-  
-  get images => null;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
         children: [
-          SegundaPag(), // Cabeçalho
+          
+          Stack(
+            children: [
+              Container(
+                height: 250,
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                    image: AssetImage('imagens/Escalada.png'),
+                    fit: BoxFit.cover,
+                  ),
+                ),
+              ),
+              Positioned(
+                bottom: 20,
+                left: 20,
+                child: Image.asset(
+                  'imagens/letraescalada.png', 
+                  height: 60, 
+                ),
+              ),
+              Positioned(
+                top: 40,
+                left: 10,
+                child: IconButton(
+                  onPressed: () {
+                    Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => EcotubaApp()));
+                  },
+                  icon: const Icon(Icons.arrow_back),
+                  color: Colors.white,
+                  iconSize: 30,
+                ),
+              ),
+            ],
+          ),
+
+          
           Expanded(
             child: ListView.builder(
               itemCount: destinos.length,
               itemBuilder: (context, index) {
                 return GestureDetector(
                   onTap: () {
-                    // Navegação para diferentes telas com base no índice
+                   
                     switch (index) {
                       case 0:
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => ecorcovado()),
+                          MaterialPageRoute(builder: (context) => EscaladaDetalhes ( escaladaindex : 0)),
                         );
                         break;
                       case 1:
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => emar()),
+                          MaterialPageRoute(builder: (context) => EscaladaDetalhes( escaladaindex : 1)),
                         );
                         break;
                       case 2:
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => eprumirim()),
+                          MaterialPageRoute(builder: (context) => EscaladaDetalhes ( escaladaindex : 2)),
                         );
-                        
+                        break;
                     }
                   },
                   child: Card(
@@ -58,20 +92,20 @@ class SegundaPag extends StatelessWidget {
                       borderRadius: BorderRadius.circular(15),
                     ),
                     child: Stack(
-                      alignment: Alignment.center, // Centraliza o texto
+                      alignment: Alignment.center,
                       children: [
                         ClipRRect(
                           borderRadius: BorderRadius.circular(15),
                           child: Image.asset(
-                            images[index], // Imagem da ilha
+                            destinos[index], 
                             height: 150,
                             width: double.infinity,
                             fit: BoxFit.cover,
                           ),
                         ),
                         Image.asset(
-                          destinos[index], // Imagem do texto da ilha
-                          height: 40, // Ajuste o tamanho conforme necessário
+                          textsImages[index], 
+                          height: 40, 
                         ),
                       ],
                     ),
@@ -85,5 +119,3 @@ class SegundaPag extends StatelessWidget {
     );
   }
 }
-
-// Defina as telas para os diferentes destinos

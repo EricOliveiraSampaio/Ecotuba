@@ -70,7 +70,7 @@ class HomePage extends StatelessWidget {
                   ),
                 ],
               ),
-            const SizedBox(height: 100), // Ajusta a distância do final da tela
+            const SizedBox(height: 100), 
             ],
           ),
           Positioned(

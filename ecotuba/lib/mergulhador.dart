@@ -1,10 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:teste/Mianchieta.dart';
-import 'package:teste/Micouves.dart';
-import 'package:teste/Miprumirim.dart';
-import 'package:teste/Mivitoria.dart';
-import 'package:teste/Mpcedro.dart';
-import 'package:teste/Mpgrossa.dart';
 import 'package:teste/main.dart';
 
 void mergulhador() {
@@ -98,37 +93,37 @@ class MergulhoScreen extends StatelessWidget {
                       case 0:
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => HeaderMicouves()),
+                          MaterialPageRoute(builder: (context) => MergulhoDetalhes (mergulhoindex: 0)),
                         );
                         break;
                       case 1:
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => HeaderMianchieta()),
+                          MaterialPageRoute(builder: (context) => MergulhoDetalhes (mergulhoindex: 1)),
                         );
                         break;
                       case 2:
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => HeaderMpcedro()),
+                          MaterialPageRoute(builder: (context) => MergulhoDetalhes (mergulhoindex: 2)),
                         );
                         break;
                       case 3:
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => HeaderMiprumirim()),
+                          MaterialPageRoute(builder: (context) => MergulhoDetalhes (mergulhoindex: 3)),
                         );
                         break;
                       case 4:
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => HeaderMpgrossa()),
+                          MaterialPageRoute(builder: (context) => MergulhoDetalhes (mergulhoindex: 4)),
                         );
                         break;
                       case 5:
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => HeaderMivitoria()),
+                          MaterialPageRoute(builder: (context) => MergulhoDetalhes (mergulhoindex: 5)),
                         );
                         break;
                     }

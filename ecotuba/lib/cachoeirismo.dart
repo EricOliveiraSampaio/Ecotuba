@@ -1,55 +1,85 @@
 import 'package:flutter/material.dart';
-import 'package:teste/CAfazenda.dart';
-import 'package:teste/CAipiranguinha.dart';
 import 'package:teste/CAprumirim.dart';
+import 'package:teste/main.dart';
 
 class Cachoeirismo extends StatelessWidget {
   final List<String> destinos = [
-    '~/imagens/CAprumirim.png',  
-    '~/imagens/CAipiranguinha.png', 
-    '~/imagens/CAfazenda.png', 
+    'imagens/CAprumirim.png', 
+    'imagens/CAipiranguinha.png', 
+    'imagens/CAfazenda.png', 
   ];
 
   final List<String> textsImages = [
-    '~/imagens/Lprumirim3.png',  
-    '~/imagens/Lipiranguinha.png', 
-    '~/imagens/Lfazenda2.png',  
+    'imagens/Lprumirim3.png',  
+    'imagens/Lipiranguinha.png', 
+    'imagens/Lfazenda2.png',  
   ];
 
-@override
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
         children: [
-          Cachoeirismo(), // Cabeçalho
+  
+          Stack(
+            children: [
+              Container(
+                height: 250,
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                    image: AssetImage('imagens/Cacho.png'),  
+                    fit: BoxFit.cover,
+                  ),
+                ),
+              ),
+              Positioned(
+                bottom: 20,
+                left: 20,
+                child: Image.asset(
+                  'imagens/leCacho.png', 
+                  height: 60,
+                ),
+              ),
+              Positioned(
+                top: 40,
+                left: 10,
+                child: IconButton(
+                  onPressed: () {
+                    Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => EcotubaApp())); 
+                  },
+                  icon: const Icon(Icons.arrow_back),
+                ),
+              ),
+            ],
+          ),
+
           Expanded(
             child: ListView.builder(
               itemCount: destinos.length,
               itemBuilder: (context, index) {
-                var images;
                 return GestureDetector(
                   onTap: () {
-                    // Navegação para diferentes telas com base no índice
+                   
                     switch (index) {
                       case 0:
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => caprumirim()),
+                          MaterialPageRoute(builder: (context) => CachoeiraDetalhes (cachoeiraindex: 0)),
                         );
                         break;
                       case 1:
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => caipiranguinha()),
+                          MaterialPageRoute(builder: (context) => CachoeiraDetalhes (cachoeiraindex: 1)),
                         );
                         break;
                       case 2:
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => cafazenda()),
+                          MaterialPageRoute(builder: (context) => CachoeiraDetalhes (cachoeiraindex: 2)),
                         );
                         break;
-                      
                     }
                   },
                   child: Card(
@@ -58,20 +88,20 @@ class Cachoeirismo extends StatelessWidget {
                       borderRadius: BorderRadius.circular(15),
                     ),
                     child: Stack(
-                      alignment: Alignment.center, // Centraliza o texto
+                      alignment: Alignment.center, 
                       children: [
                         ClipRRect(
                           borderRadius: BorderRadius.circular(15),
                           child: Image.asset(
-                            images[index], // Imagem da ilha
+                            destinos[index], 
                             height: 150,
                             width: double.infinity,
                             fit: BoxFit.cover,
                           ),
                         ),
                         Image.asset(
-                          destinos[index], // Imagem do texto da ilha
-                          height: 40, // Ajuste o tamanho conforme necessário
+                          textsImages[index], 
+                          height: 40, 
                         ),
                       ],
                     ),
@@ -85,6 +115,3 @@ class Cachoeirismo extends StatelessWidget {
     );
   }
 }
-
-// Defina as telas para os diferentes destinos
-

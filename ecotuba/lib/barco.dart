@@ -1,22 +1,24 @@
 import 'package:flutter/material.dart';
+import 'package:teste/Bcouves.dart';
+import 'package:teste/main.dart';
 
 class Barco extends StatelessWidget {
   final List<String> destinos = [
-    '~/imagens/Icouves3.png',  // Imagem da Ilha das Couves
-    '~/imagens/Iprumirim3.png', // Imagem da Ilha do Prumirim
-    '~/imagens/Iporto.png',  // Imagem do Cais do Porto
-    '~/imagens/Iporcos.png',  // Imagem da Ilha dos Porcos
-    '~/imagens/Pfelix3.png',  // Imagem da Praia do Félix
-    '~/imagens/Plazaro3.png',  // Imagem da Praia do Lázaro
+    'imagens/Icouves3.png',  
+    'imagens/Iprumirim.png', 
+    'imagens/Iporto.png',     
+    'imagens/Iporcos.png',  
+    'imagens/Pfelix3.png',   
+    'imagens/Plazaro3.png',   
   ];
 
   final List<String> textsImages = [
-    '~/imagens/Lcouves3.png',  // Texto sobreposto para Ilha das Couves
-    '~/imagens/Lprumirim3.png', // Texto sobreposto para Ilha do Prumirim
-    '~/imagens/Lporto.png',  // Texto sobreposto para Cais do Porto
-    '~/imagens/Lporcos.png',  // Texto sobreposto para Ilha dos Porcos
-    '~/imagens/Lfelix3.png',  // Texto sobreposto para Praia do Félix
-    '~/imagens/Llazaro3.png',  // Texto sobreposto para Praia do Lázaro
+    'imagens/Lcouves2.png',  
+    'imagens/Lprumirim2.png', 
+    'imagens/Lporto.png',     
+    'imagens/Lporcos.png',   
+    'imagens/Lfelix3.png',    
+    'imagens/Llazaro3.png',   
   ];
 
   @override
@@ -24,33 +26,30 @@ class Barco extends StatelessWidget {
     return Scaffold(
       body: Column(
         children: [
+          
           Stack(
+            alignment: Alignment.center,
             children: [
-              Container(
+              Image.asset(
+                'imagens/Bar.png',
                 height: 250,
-                decoration: BoxDecoration(
-                  image: DecorationImage(
-                    image: AssetImage('~/imagens/Bar.png'), // Cabeçalho da tela
-                    fit: BoxFit.cover,
-                  ),
-                ),
+                width: double.infinity,
+                fit: BoxFit.cover,
+              ),
+              Image.asset(
+                'imagens/leBar.png',  
+                height: 100,  
               ),
               Positioned(
                 top: 40,
                 left: 10,
                 child: IconButton(
                   onPressed: () {
-                    Navigator.pop(context); // Botão para voltar
+                    Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => EcotubaApp()),
+                        ); // Botão de voltar
                   },
-                  icon: const Icon(Icons.arrow_back),
-                ),
-              ),
-              Positioned(
-                bottom: 20,
-                left: 20,
-                child: Image.asset(
-                  '~/imagens/leBar.png', // Texto "BARCO"
-                  height: 60,
+                  icon: Icon(Icons.arrow_back),
                 ),
               ),
             ],
@@ -59,28 +58,71 @@ class Barco extends StatelessWidget {
             child: ListView.builder(
               itemCount: destinos.length,
               itemBuilder: (context, index) {
-                return Card(
-                  margin: EdgeInsets.symmetric(vertical: 10, horizontal: 15),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(15),
-                  ),
-                  child: Stack(
-                    alignment: Alignment.center, // Alinha os textos ao centro
-                    children: [
-                      ClipRRect(
-                        borderRadius: BorderRadius.circular(15),
-                        child: Image.asset(
-                          destinos[index], // Imagem do destino (ilha ou praia)
-                          height: 150,
-                          width: double.infinity,
-                          fit: BoxFit.cover,
+                return GestureDetector(
+                  onTap: () {
+                    // Navegação para diferentes telas com base no índice
+                    switch (index) {
+                      case 0:
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => BarcoDetalhes (barcoindex: 0)),
+                        );
+                        break;
+                      case 1:
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => BarcoDetalhes (barcoindex: 1)),
+                        );
+                        break;
+                      case 2:
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => BarcoDetalhes (barcoindex: 2)),
+                        );
+                        break;
+                      case 3:
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => BarcoDetalhes (barcoindex: 3)),
+                        );
+                        break;
+                      case 4:
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => BarcoDetalhes (barcoindex: 4)),
+                        );
+                        break;
+                      case 5:
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => BarcoDetalhes (barcoindex: 5)),
+                        );
+                        break;
+                    }
+                  },
+                  child: Card(
+                    margin: EdgeInsets.symmetric(vertical: 10, horizontal: 15),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(15),
+                    ),
+                    child: Stack(
+                      alignment: Alignment.center, // Centraliza o texto
+                      children: [
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(15),
+                          child: Image.asset(
+                            destinos[index], // Imagem de fundo do destino
+                            height: 150,
+                            width: double.infinity,
+                            fit: BoxFit.cover,
+                          ),
                         ),
-                      ),
-                      Image.asset(
-                        textsImages[index], // Imagem do texto sobreposto
-                        height: 40, // Ajuste de altura do texto
-                      ),
-                    ],
+                        Image.asset(
+                          textsImages[index],  // Imagem de texto sobreposto
+                          height: 40,  // Ajuste o tamanho conforme necessário
+                        ),
+                      ],
+                    ),
                   ),
                 );
               },
