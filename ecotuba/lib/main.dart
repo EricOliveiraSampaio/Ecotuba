@@ -3,8 +3,9 @@ import 'package:teste/barco.dart';
 import 'package:teste/cachoeirismo.dart';
 import 'package:teste/canoagem.dart';
 import 'package:teste/ciclismo.dart';
-import 'package:teste/mergulhador.dart';
+import 'package:teste/mergulhador.dart';                      
 import 'package:teste/segundapag.dart';
+//import 'package:url_launcher/url_launcher.dart';
 
 void main() {
   runApp(const EcotubaApp());
@@ -12,6 +13,12 @@ void main() {
 
 class EcotubaApp extends StatelessWidget {
   const EcotubaApp({super.key});
+  
+//Future<void> _launchURL() async {
+//   final Uri url = Uri.parse('https://www.google.com/maps/place/Ubatuba+-+SP,+11680-000/@-23.3337964,-45.0050719,12z/data=!4m6!3m5!1s0x94cd52b4963b4e1d:0x96a1961c15dce516!8m2!3d-23.4337941!4d-45.085956!16zL20vMDhnamxu?entry=ttu&g_ep=EgoyMDI0MDkxOC4xIKXMDSoASAFQAw%3D%3D');
+//   if (!await launchUrl(url)) {
+//        throw Exception('Could not launch $url');
+//    }}
 
   @override
   Widget build(BuildContext context) {
@@ -88,9 +95,9 @@ class HomePage extends StatelessWidget {
       ),
       
     );
-
     
   }
+  
 
   
 

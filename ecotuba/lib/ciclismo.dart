@@ -66,9 +66,9 @@ class CiclismoScreen extends StatelessWidget {
   final List<String> destinos = [
     'imagens/Lpicinguaba.png',
     'imagens/Lbonete.png',
-    'imagens/Lbananas.png',
-    'imagens/Litagua.png',
-    'imagens/Lfazenda.png',
+    'imagens/LETRAbananas.png',
+    'imagens/LETRAitagua.png',
+    'imagens/LETRAfazenda.png',
   ];
 
   @override
