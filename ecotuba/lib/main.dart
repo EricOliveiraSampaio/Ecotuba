@@ -20,6 +20,8 @@ class EcotubaApp extends StatelessWidget {
 //        throw Exception('Could not launch $url');
 //    }}
 
+// Esta dando erro no launch Url por conta do import, mesmo estando certo, segui todos os passos do git e mesmo assim nao consegui resolver.
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
