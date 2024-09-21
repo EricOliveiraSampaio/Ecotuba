@@ -18,6 +18,7 @@ namespace EcotubaAppDesktop.Controllers
             return View();
         }
 
+
         public IActionResult Privacy()
         {
             return View();
@@ -27,6 +28,31 @@ namespace EcotubaAppDesktop.Controllers
         {
             return View();
         }
+        public IActionResult Ter()
+        {
+            return View();
+        }
+
+        public IActionResult Quar()
+        {
+            return View();
+        }
+
+        public IActionResult Quin()
+        {
+            return View();
+        }
+
+        public IActionResult Sex()
+        {
+            return View();
+        }
+
+        public IActionResult Set()
+        {
+            return View();
+        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

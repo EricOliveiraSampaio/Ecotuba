@@ -1,34 +1,37 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
-
-@{
-    ViewData["Title"] = "Home Page";
+﻿@{
     Layout = null;
 }
 
-<html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="~/css/site2.css" asp-append-version="true" />
+    <title>Ecotuba</title>
+    <link rel="stylesheet" href="~/css/site2.css">
 </head>
 <body>
-    <div class="seta">
-     <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
-    <img src="https://i.postimg.cc/2yYcFRWS/seta.png" alt="Voltar" class="back-arrow">
-    </a>
+    <div id="voltar">
+        <a asp-action="Index" asp-controller="Home">
+            <img src="https://i.postimg.cc/k57z0hfX/seta.png">
+        </a>
     </div>
-    <div class="container">
-        <div class="letra">
-            <img src="https://i.postimg.cc/MKNBh0sy/leMER.png" alt="Letra" class="LetraMER">
+    <div id="img-prin">
+        <img src="https://i.postimg.cc/d0npwmxR/mergulhador.png">
+    </div>
+    <div id="cards-container">
+        <div id="card">
+            <div class="img-card">
+                <a class="nav-link text-dark" asp-controller="Mer" asp-action="Couves"> <img class="im" src="https://i.postimg.cc/Jhj5M1Yb/Icouves.png">
+                    <img class="nm" src="https://i.postimg.cc/VkxWxSgf/Lcouves2.png">
+                </a>
+            </div>
         </div>
-        <div class="content">
-            <div class="description">
-                <img src="https://i.postimg.cc/NGRZybX0/praMEr.png" alt="Beach" class="beach-image">
-                <p>Descricao</p>
+        <div id="card">
+            <div class="img-card">
+                <a class="nav-link text-dark" asp-controller="Mer" asp-action="Anchi"> <img class="im" src="https://i.postimg.cc/MpMY30y3/Ianchieta.png">
+                    <img class="nm" src="https://i.postimg.cc/sxgYY5jc/Lanchieta.png">
+                </a>
             </div>
         </div>
     </div>

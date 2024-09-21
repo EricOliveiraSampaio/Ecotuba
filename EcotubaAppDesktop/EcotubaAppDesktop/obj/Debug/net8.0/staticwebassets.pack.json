@@ -5,6 +5,54 @@
       "PackagePath": "staticwebassets\\EcotubaAppDesktop.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\erica\\Downloads\\Ecotuba\\EcotubaAppDesktop\\EcotubaAppDesktop\\wwwroot\\css\\AnchiMer.css",
+      "PackagePath": "staticwebassets\\css\\AnchiMer.css"
+    },
+    {
+      "Id": "C:\\Users\\erica\\Downloads\\Ecotuba\\EcotubaAppDesktop\\EcotubaAppDesktop\\wwwroot\\css\\BoneteCi.css",
+      "PackagePath": "staticwebassets\\css\\BoneteCi.css"
+    },
+    {
+      "Id": "C:\\Users\\erica\\Downloads\\Ecotuba\\EcotubaAppDesktop\\EcotubaAppDesktop\\wwwroot\\css\\CorcovadoEsc.css",
+      "PackagePath": "staticwebassets\\css\\CorcovadoEsc.css"
+    },
+    {
+      "Id": "C:\\Users\\erica\\Downloads\\Ecotuba\\EcotubaAppDesktop\\EcotubaAppDesktop\\wwwroot\\css\\CouvesBar.css",
+      "PackagePath": "staticwebassets\\css\\CouvesBar.css"
+    },
+    {
+      "Id": "C:\\Users\\erica\\Downloads\\Ecotuba\\EcotubaAppDesktop\\EcotubaAppDesktop\\wwwroot\\css\\CouvesMer.css",
+      "PackagePath": "staticwebassets\\css\\CouvesMer.css"
+    },
+    {
+      "Id": "C:\\Users\\erica\\Downloads\\Ecotuba\\EcotubaAppDesktop\\EcotubaAppDesktop\\wwwroot\\css\\FelixCan.css",
+      "PackagePath": "staticwebassets\\css\\FelixCan.css"
+    },
+    {
+      "Id": "C:\\Users\\erica\\Downloads\\Ecotuba\\EcotubaAppDesktop\\EcotubaAppDesktop\\wwwroot\\css\\IpiranguinhaCac.css",
+      "PackagePath": "staticwebassets\\css\\IpiranguinhaCac.css"
+    },
+    {
+      "Id": "C:\\Users\\erica\\Downloads\\Ecotuba\\EcotubaAppDesktop\\EcotubaAppDesktop\\wwwroot\\css\\LazaroCan.css",
+      "PackagePath": "staticwebassets\\css\\LazaroCan.css"
+    },
+    {
+      "Id": "C:\\Users\\erica\\Downloads\\Ecotuba\\EcotubaAppDesktop\\EcotubaAppDesktop\\wwwroot\\css\\PicinguabaCi.css",
+      "PackagePath": "staticwebassets\\css\\PicinguabaCi.css"
+    },
+    {
+      "Id": "C:\\Users\\erica\\Downloads\\Ecotuba\\EcotubaAppDesktop\\EcotubaAppDesktop\\wwwroot\\css\\PortoBar.css",
+      "PackagePath": "staticwebassets\\css\\PortoBar.css"
+    },
+    {
+      "Id": "C:\\Users\\erica\\Downloads\\Ecotuba\\EcotubaAppDesktop\\EcotubaAppDesktop\\wwwroot\\css\\PrumirimCac.css",
+      "PackagePath": "staticwebassets\\css\\PrumirimCac.css"
+    },
+    {
+      "Id": "C:\\Users\\erica\\Downloads\\Ecotuba\\EcotubaAppDesktop\\EcotubaAppDesktop\\wwwroot\\css\\PrumirimEsc.css",
+      "PackagePath": "staticwebassets\\css\\PrumirimEsc.css"
+    },
+    {
       "Id": "C:\\Users\\erica\\Downloads\\Ecotuba\\EcotubaAppDesktop\\EcotubaAppDesktop\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

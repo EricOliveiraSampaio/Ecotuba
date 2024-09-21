@@ -1,67 +1,66 @@
-﻿body, html {
+﻿* {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background: url('https://i.postimg.cc/hPrwsjpW/fuMer.png') no-repeat center center fixed; /* Set the background image */
-    background-size: cover;
-    color: #fff;
 }
 
-.container {
+body {
+    background: #8cc7ab;
+    color: #fff;
+    font-family: Arial;
+}
+
+
+#img-prin img {
+    width: 100%;
+    height: 20%;
+}
+
+.nome img {
+    margin-bottom: 100px;
+}
+
+#card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.img-card {
+    position: relative;
+}
+
+.nm {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px; 
+    height: auto;
+}
+
+#cards-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 500px; /* Reduced margin-top to bring the container closer */
+    margin-top: 30px;
 }
 
-.header {
-    position: relative;
-    width: 100%;
-    text-align: center;
-    background-color: #2a6597;
-    padding: 10px 0;
-}
-
-.seta {
+#voltar {
     position: absolute;
-    left: 10px;
-    top: 10px;
-    width: 10px; /* Adjusted size */
-    height: 10px; /* Adjusted size */
-    cursor: pointer;
-}
-
-h1 {
-    margin: 0;
-    font-size: 2em;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-}
-
-.content {
-    position: relative;
-    width: 100%;
-    max-width: 1100px;
-    height: 100%;
-    max-height: 1000px;
-}
-
-.description {
-    background-color: #395a78;
-    padding: 20px;
-    border-radius: 15px;
-    text-align: center;
-    margin-top: 10px; /* Reduced margin-top to bring the description closer */
-    z-index: 1;
-    position: relative;
-}
-
-.beach-image {
-    width: 80%;
-    height: auto;
-    border-radius: 10px;
-}
-
-p {
-    font-size: 1.2em;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: rgb(37, 96, 138);
+    margin-left: 20px;
     margin-top: 10px;
 }
+
+    #voltar img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); 
+        height: auto;
+    }

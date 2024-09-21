@@ -1,0 +1,36 @@
+﻿@model EcotubaAppDesktop.Models.Canoagem
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canoagem</title>
+    <link rel="stylesheet" href="~/css/FelixCan.css">
+</head>
+<body>
+    <div class="container">
+        <div id="voltar">
+            <a asp-action="Ter" asp-controller="Home">
+                <img src="https://i.postimg.cc/k57z0hfX/seta.png">
+            </a>
+        </div>
+
+        <div class="content">
+            <div class="header">
+                <h1>Praia do Felix</h1>
+            </div>
+            <div class="image-section">
+                <img src="https://i.postimg.cc/xTY9zT9p/Pfelix.png" alt="Imagem da Praia">
+            </div>
+            <div id="descricao-container">
+                @Model.texto
+            </div>
+        </div>
+    </div>
+</body>
+</html>

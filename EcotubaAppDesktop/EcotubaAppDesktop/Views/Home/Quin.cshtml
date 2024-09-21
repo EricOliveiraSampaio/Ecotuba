@@ -1,0 +1,41 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecotuba</title>
+    <link rel="stylesheet" href="~/css/site2.css">
+</head>
+<body>
+    <div id="voltar">
+        <a asp-action="Index" asp-controller="Home">
+            <img src="https://i.postimg.cc/k57z0hfX/seta.png">
+        </a>
+    </div>
+    <div id="img-prin">
+        <img src="https://i.postimg.cc/nL86m3JK/Cicli-1.png">
+    </div>
+    <div id="cards-container">
+        <div id="card">
+            <div class="img-card">
+                <a class="nav-link text-dark" asp-controller="Ci" asp-action="Bonete">
+                    <img class="im" src="https://i.postimg.cc/5yHQQBLz/Cbonete.png">
+                    <img class="nm" src="https://i.postimg.cc/xdSZsgd0/imagem-2024-09-21-164154531.png">
+                </a>
+            </div>
+        </div>
+        <div id="card">
+            <div class="img-card">
+                <a class="nav-link text-dark" asp-controller="Ci" asp-action="Picinguaba">
+                    <img class="im" src="https://i.postimg.cc/MZ4Q2LJm/Cpicinguaba.png">
+                    <img class="nm" src="https://i.postimg.cc/YCVrj58d/Lpicinguaba.png">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

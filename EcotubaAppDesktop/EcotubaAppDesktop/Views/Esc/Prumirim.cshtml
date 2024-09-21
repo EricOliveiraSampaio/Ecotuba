@@ -1,0 +1,36 @@
+﻿@model EcotubaAppDesktop.Models.Escalada
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mergulho</title>
+    <link rel="stylesheet" href="~/css/PrumirimEsc.css">
+</head>
+<body>
+    <div class="container">
+        <div id="voltar">
+            <a asp-action="Quar" asp-controller="Home">
+                <img src="https://i.postimg.cc/k57z0hfX/seta.png">
+            </a>
+        </div>
+
+        <div class="content">
+            <div class="header">
+                <h1>Costao do Prumirim</h1>
+            </div>
+            <div class="image-section">
+                <img src="https://i.postimg.cc/Z5Lkzr3J/Eprumirim.png" alt="Imagem da Praia">
+            </div>
+            <div id="descricao-container">
+                @Model.texto
+            </div>
+        </div>
+    </div>
+</body>
+</html>

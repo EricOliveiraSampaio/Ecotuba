@@ -18,6 +18,46 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\erica\Downloads\Ecotuba\EcotubaAppDesktop\EcotubaAppDesktop
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/erica/Downloads/Ecotuba/EcotubaAppDesktop/EcotubaAppDesktop/Views/Bar/Couves.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFyXENvdXZlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/erica/Downloads/Ecotuba/EcotubaAppDesktop/EcotubaAppDesktop/Views/Bar/Porto.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFyXFBvcnRvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/erica/Downloads/Ecotuba/EcotubaAppDesktop/EcotubaAppDesktop/Views/Cac/Ipiranguinha.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FjXElwaXJhbmd1aW5oYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/erica/Downloads/Ecotuba/EcotubaAppDesktop/EcotubaAppDesktop/Views/Cac/Prumirim2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FjXFBydW1pcmltMi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/erica/Downloads/Ecotuba/EcotubaAppDesktop/EcotubaAppDesktop/Views/Can/Felix.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FuXEZlbGl4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/erica/Downloads/Ecotuba/EcotubaAppDesktop/EcotubaAppDesktop/Views/Can/Lazaro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FuXExhemFyby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/erica/Downloads/Ecotuba/EcotubaAppDesktop/EcotubaAppDesktop/Views/Ci/Bonete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2lcQm9uZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/erica/Downloads/Ecotuba/EcotubaAppDesktop/EcotubaAppDesktop/Views/Ci/Picinguaba.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2lcUGljaW5ndWFiYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/erica/Downloads/Ecotuba/EcotubaAppDesktop/EcotubaAppDesktop/Views/Esc/Corcovado.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXNjXENvcmNvdmFkby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/erica/Downloads/Ecotuba/EcotubaAppDesktop/EcotubaAppDesktop/Views/Esc/Prumirim.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXNjXFBydW1pcmltLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/erica/Downloads/Ecotuba/EcotubaAppDesktop/EcotubaAppDesktop/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -26,8 +66,36 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/erica/Downloads/Ecotuba/EcotubaAppDesktop/EcotubaAppDesktop/Views/Home/Quar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxRdWFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/erica/Downloads/Ecotuba/EcotubaAppDesktop/EcotubaAppDesktop/Views/Home/Quin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxRdWluLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/erica/Downloads/Ecotuba/EcotubaAppDesktop/EcotubaAppDesktop/Views/Home/Seg.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTZWcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/erica/Downloads/Ecotuba/EcotubaAppDesktop/EcotubaAppDesktop/Views/Home/Set.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTZXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/erica/Downloads/Ecotuba/EcotubaAppDesktop/EcotubaAppDesktop/Views/Home/Sex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/erica/Downloads/Ecotuba/EcotubaAppDesktop/EcotubaAppDesktop/Views/Home/Ter.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/erica/Downloads/Ecotuba/EcotubaAppDesktop/EcotubaAppDesktop/Views/Mer/Anchi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVyXEFuY2hpLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/erica/Downloads/Ecotuba/EcotubaAppDesktop/EcotubaAppDesktop/Views/Mer/Couves.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVyXENvdXZlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/erica/Downloads/Ecotuba/EcotubaAppDesktop/EcotubaAppDesktop/Views/Shared/Error.cshtml]

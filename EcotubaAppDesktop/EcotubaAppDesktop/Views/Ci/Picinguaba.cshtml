@@ -1,0 +1,36 @@
+﻿@model EcotubaAppDesktop.Models.Ciclismo
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciclismo</title>
+    <link rel="stylesheet" href="~/css/PicinguabaCi.css">
+</head>
+<body>
+    <div class="container">
+        <div id="voltar">
+            <a asp-action="Quin" asp-controller="Home">
+                <img src="https://i.postimg.cc/k57z0hfX/seta.png">
+            </a>
+        </div>
+
+        <div class="content">
+            <div class="header">
+                <h1>Picinguaba</h1>
+            </div>
+            <div class="image-section">
+                <img src="https://i.postimg.cc/MZ4Q2LJm/Cpicinguaba.png" alt="Imagem da Praia">
+            </div>
+            <div id="descricao-container">
+                @Model.texto
+            </div>
+        </div>
+    </div>
+</body>
+</html>

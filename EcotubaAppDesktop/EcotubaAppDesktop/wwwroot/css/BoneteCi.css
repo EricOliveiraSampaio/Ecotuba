@@ -1,0 +1,81 @@
+﻿
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('https://i.postimg.cc/nL86m3JK/Cicli-1.png') no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: #fff;
+}
+
+
+#voltar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+    #voltar img {
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+    }
+
+
+.content {
+    background-color: #326589;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+}
+
+
+.header h1 {
+    font-size: 3em;
+    font-family: 'Bubblegum Sans', cursive;
+    margin: 0;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+
+.image-section {
+    margin: 20px 0;
+}
+
+    .image-section img {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+
+
+#descricao {
+    font-size: 1.5em;
+    color: #333;
+    margin-top: 20px;
+}
+
+#descricao-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    color: #333;
+    font-size: 1.2em;
+    margin-top: 20px;
+    text-align: left;
+}

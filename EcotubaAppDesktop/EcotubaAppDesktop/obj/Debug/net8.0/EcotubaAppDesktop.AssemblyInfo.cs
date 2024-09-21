@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EcotubaAppDesktop")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ec7aaae142dc07ad67b92135f611f0125cda96d9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5dca123ff31232100d14b56ae2414e550ed47271")]
 [assembly: System.Reflection.AssemblyProductAttribute("EcotubaAppDesktop")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EcotubaAppDesktop")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
